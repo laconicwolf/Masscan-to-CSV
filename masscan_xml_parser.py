@@ -29,7 +29,7 @@ def get_host_data(root):
         # Get address element information
         # <address addr="10.10.10.1" addrtype="ipv4"/>
         ip_address = host.find('address').attrib.get('addr')
-        addr_type = host.find('address').attrib.get('addtype')
+        addr_type = host.find('address').attrib.get('addrtype')
         
         # If we only want the IP addresses from the scan, stop here
         if args.ip_addresses:
